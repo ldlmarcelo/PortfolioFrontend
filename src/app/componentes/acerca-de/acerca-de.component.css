@@ -1,0 +1,20 @@
+.container {
+    padding-bottom: 15px;
+}
+
+#mifoto {
+    flex: auto;
+    position: relative;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 100%;
+    margin-left: 30px;
+    margin-top: -30%;
+    padding: .25rem;
+    background-color: #fff;
+    
+}
+
+#pAcercaDe {
+    font-weight: 500;
+}

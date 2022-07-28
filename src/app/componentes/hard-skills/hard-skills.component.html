@@ -1,0 +1,83 @@
+<div class="container skills"> <!--[style.width.%] = "hard.porcentaje"-->
+    <div>
+        <div class="s-body">
+            <h5 class="hs-titulo">Hard Skills</h5>
+
+            <div class="row" *ngFor="let hardskill of hardskillList">
+
+
+              <div class="col-xs-2">
+                  <img [src]="hardskill.icon" img-fluid width="50px">
+              </div>
+              <div class="col-md">
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" [style.width.%]="hardskill.porcentaje" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100">{{hardskill.porcentaje}} %</div>
+                  </div>
+              </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-xs-2">
+      <img src="./assets/img/html5.png" alt="HTML5" img-fluid width="50px">
+  </div>
+  <div class="col-md">
+      <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-2">
+      <img src="./assets/img/css3.png" alt="css3" img-fluid width="50px">
+  </div>
+  <div class="col-md">
+      <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-2">
+      <img src="./assets/img/javascript.png" alt="javascript" img-fluid width="50px">
+  </div>
+  <div class="col-md">
+      <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-2">
+      <img src="./assets/img/angular.png" alt="Anuglar" img-fluid width="50px">
+  </div>
+  <div class="col-md">
+      <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-2">
+      <img src="./assets/img/mysql_logo_icon_169941.png" alt="mysql" img-fluid width="50px">
+  </div>
+  <div class="col-md">
+      <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div>
+  </div>
+</div> -->

@@ -1,0 +1,34 @@
+#navbar-header{
+    background-color: blueviolet !important;
+    color: white;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+.header a{
+    color: white;
+    font-weight: bolder;
+}
+
+#APLogo {
+    height:80px;
+}
+
+#logogithub {
+    height: 35px;
+    margin-bottom: 20px;
+}
+#logolinkedin {
+    height: 35px;
+}
+
+#login {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 10px;
+}
+
+
+.header-main{
+    padding-bottom: 15px;
+}

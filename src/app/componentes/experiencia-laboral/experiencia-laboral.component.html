@@ -1,0 +1,30 @@
+<!--Experiencia Laboral-->
+
+<div class="container expyedu">
+  <div class="card" style="width: 100%">
+    <div class="row">
+      <div class="col">
+
+        <ul class="list-group list-group-item">
+          <h5>Experiencia Laboral</h5>
+
+          <li *ngFor="let experiencia of experienciaLaboralList" class="list-group-item">
+            <img [src]="experiencia.logo" style= "width:50px" alt="">
+            <p>{{experiencia.fecha}} {{experiencia.empresa}} {{experiencia.puesto}} {{experiencia.descripcion}}</p>
+          </li>
+
+          <li class="list-group-item">
+            <a
+              target="_blank"
+              href="https://ar.linkedin.com/in/marcelo-javier-luna-dalla-lasta-7a57b71a6?trk=people-guest_people_search-card"
+              class="card-link"
+              >...más detalles
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--/Experiencia Laboral-->

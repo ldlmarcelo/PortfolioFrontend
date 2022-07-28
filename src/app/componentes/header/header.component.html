@@ -1,0 +1,51 @@
+<header class="header">
+
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navbar-header">
+            <a class="navbar-brand" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"
+                target="_blank">
+                <img id="APLogo" [src]="miPortfolio.APLogo" alt="Logo Argentina Programa">
+                <a href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa" target="_blank">
+                    #YoProgramo
+                </a>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!--ml-auto desplaza a la izquierda los elementos-->
+                    <li class="nav-item active">
+                        <a class="nav-link" target="_blank"
+                            href="https://ar.linkedin.com/in/marcelo-javier-luna-dalla-lasta-7a57b71a6?trk=people-guest_people_search-card">
+                            <img id="logolinkedin" [src]="miPortfolio.logoLinkedin" alt="Linkedin">
+                        </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" id="logogithub" target="_blank" href="https://github.com/ldlmarcelo">
+                            <img id="logogithub" [src]="miPortfolio.logoGithub" alt="Github">
+                        </a>
+                    </li>
+
+
+                </ul>
+                <button type="button" class="btn btn-info" id="login">Login</button>
+            </div>
+        </nav>
+
+
+
+        <div class="card" style="width: 100%;">
+            <img [src]="miPortfolio.imgBackground" class="card-img-top" alt="...">
+
+        </div>
+
+    </div>
+
+</header>

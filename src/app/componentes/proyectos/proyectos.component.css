@@ -1,0 +1,20 @@
+.proyectos{
+    background-color:blueviolet;
+    border-left: solid blueviolet 10px;
+    border-right: solid blueviolet 10px;
+    padding:20px 75px 40px 83px;
+    
+}
+
+.proyectos h5 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.card-proyectos {
+
+    margin-bottom: 25px;
+    background-color: rgb(20, 17, 199);
+    color: rgb(253, 195, 195);
+    font-weight: bolder;
+}

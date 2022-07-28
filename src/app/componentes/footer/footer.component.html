@@ -1,0 +1,46 @@
+<footer class="container footer">
+  <div class="row">
+    <div class="col-lg-3 mb-3">
+      <a
+        class="d-inline-flex align-items-center mb-2 text-decoration-none"
+        href="#"
+      >
+        <span style="color: white; font-weight: bolder"
+          >Mi Portfolio Web 2022</span
+        >
+      </a>
+      <ul class="list-unstyled small">
+        <li class="mb-2">
+          Diseñado y construido con amor y dedicación con el apoyo de Argentina
+          Programa
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5>Links</h5>
+      <ul class="list-unstyled">
+        <li class="mb-2"><a href="#">Home</a></li>
+        <li class="mb-2"><a href="#">Más sobre mí</a></li>
+        <li class="mb-2"><a href="#">Intereses</a></li>
+        <li class="mb-2"><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5>Guides</h5>
+      <ul class="list-unstyled">
+        <li class="mb-2"><a href="#">Experciencia</a></li>
+        <li class="mb-2"><a href="#">Educación</a></li>
+        <li class="mb-2"><a href="#">Soft Skills</a></li>
+        <li class="mb-2"><a href="#">Hard Skills</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5>Projects</h5>
+      <ul class="list-unstyled" *ngFor="let proyecto of proyectosList">
+        <li class="mb-2">
+          <a href="#">{{ proyecto.titulo }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

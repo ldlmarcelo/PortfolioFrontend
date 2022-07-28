@@ -1,0 +1,40 @@
+.body {
+    background-color: aliceblue;
+}
+
+.card li {
+    border: 0;
+    color: black;
+}
+
+.container {
+    background-color: blueviolet;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.skills {
+    background-color: blueviolet;
+    padding: 50px 100px 10px 100px;
+    color: white;
+}
+
+.skills h5{
+margin-left: -17px;
+}
+
+.col-xs-2 {
+    margin-top: 10px;
+}
+
+.col-md {
+    margin-top: 25px;
+}
+
+
+
+.card {
+    border: 0;
+}
+
+

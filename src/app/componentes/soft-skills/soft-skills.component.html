@@ -1,0 +1,33 @@
+<div class="container skills">
+  <div>
+    <div class="s-body">
+      <h5 class="hs-titulo">Soft Skills</h5>
+
+      <div class="row" *ngFor="let softskill of softSkillList">
+        <div class="col-xs-2">
+
+          <abbr title="{{softskill.tooltip}}"><img [src]="softskill.icon"
+            img-fluid
+            width="50px"
+          /></abbr>
+        </div>
+        <div class="col-md">
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              [style.width.%]="softskill.porcentaje"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              {{ softskill.porcentaje }} %
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,130 @@
+{
+  "APLogo": "./assets/img/APLogo-20-20.png",
+  "imgBackground": "./assets/img/developer.jpg",
+  "logoGithub": "./assets/img/github.png",
+  "logoLinkedin": "./assets/img/Logolinkedin.png",
+
+  "avatar": "./assets/img/mifoto.jpg",
+  "name": "Marcelo Javier Luna Dalla Lasta",
+  "profesion": "Desarrollador Web  Fullstack Junior",
+  "ubicacion": "Argentina - Córdoba",
+  "sobreMi": "Trabajo en el área de Infraestructura IT como Analista de Soporte Técnico y Helpdesk hace más de 15 años. Actualmente estoy comprometido en mi formación como Full Stack Developer y pretendo involucrarme, participar y   trabajar en la industria del Desarrollo Web y de aplicaciones a nivel nacional y/o internacional. Este portfolio fue desarrollado por mí gracias a la capacitación brindada por Argentina Programa #YoProgramo. En lo personal y privado soy un apasionado de la música en general y del repertorio de música clásica para guitarra de concierto o española. Practico deportes con el objetivo de superar mis propias marcas. Me gusta relacionarme con personas con intereses comunes. Valoro la amistad y me considero empático y responsable.",
+
+  "experienciaLaboral": [
+    {
+      "fecha": "2013_Actualidad -",
+      "empresa": "Caruso Seguros -",
+      "logo": "./assets/img/logocaruso.svg",
+      "puesto": "Analista de Soporte Técnico -",
+      "descripcion": "Conocimiento en Atlassian Jira Service Desk (administrador y configuración) - Conocimiento de Office 365 - Microsoft Sharepoint - Infraestructura IT en general"
+    },
+    {
+      "fecha": "2005_2013 -",
+      "empresa": "Jazpplat Argentina para Jazztel España -",
+      "logo": "./assets/img/logoJazztel.ico",
+      "puesto": "",
+      "descripcion": "Representante comercial - Representante de Atención al Cliente - Soporte Técnico Nivel 1 - Soporte Técnico Nivel 2 - Analista de Soporte Técnico para cliente Interno."
+    }
+  ],
+
+  "educacion": [
+    {
+      "fecha": "- 2022",
+      "institucion": "- Argentina Programa 2da Etapa #YoProgramo",
+      "titulo": "Fullstack Developer Junior"
+    },
+
+    {
+      "fecha": "- 2021",
+      "institucion": "- Argentina Programa 1ra Etapa #SeProgramar ",
+      "titulo": "- Fundamentos"
+    },
+
+    {
+      "fecha": "- 2011",
+      "institucion": "- Curso .NET y Programación Orientada a Objetos",
+      "titulo": ""
+    },
+
+    {
+      "fecha": "- 1995",
+      "institucion": "- ENET Nro 1 'Profesor Vicente García Aguilera' ",
+      "titulo": "Técnico Electro Mecánico"
+    }
+  ],
+
+  "hardskill": [
+    {
+      "icon": "./assets/img/html5.png",
+      "porcentaje": "53"
+    },
+    {
+      "icon": "./assets/img/css3.png",
+      "porcentaje": "57"
+    },
+    {
+      "icon": "./assets/img/javascript.png",
+      "porcentaje": "38"
+    },
+    {
+      "icon": "./assets/img/angular.png",
+      "porcentaje": "56"
+    },
+    {
+      "icon": "./assets/img/mysql_logo.png",
+      "porcentaje": "72"
+    }
+  ],
+  "softskill": [
+    {
+      "icon": "./assets/img/compromiso.png",
+      "porcentaje": "98",
+      "tooltip": "Compromiso"
+    },
+    {
+      "icon": "./assets/img/creatividad.png",
+      "porcentaje": "90",
+      "tooltip": "Creatividad"
+    },
+    {
+      "icon": "./assets/img/empatia.png",
+      "porcentaje": "95",
+      "tooltip": "Empatía"
+    },
+    {
+      "icon": "./assets/img/gestion de tiempo.png",
+      "porcentaje": "80",
+      "tooltip": "Gestión del tiempo"
+    },
+    {
+      "icon": "./assets/img/puntualidad.png",
+      "porcentaje": "100",
+      "tooltip": "Puntualidad"
+    },
+    {
+      "icon": "./assets/img/trabajoenequipo.png",
+      "porcentaje": "95",
+      "tooltip": "Trabajo en equipo"
+    }
+  ],
+  "proyectosList": [
+    {
+      "titulo": "Portfolio Web",
+      "subtitulo": "#YoProgramo",
+      "detalle": "Mi Portfolio",
+      "link": "https://www.youtube.com/watch?v=WtPY-JHczPM"
+    },
+    {
+      "titulo": "Proyecto 2",
+      "subtitulo": "Segundo proyecto",
+      "detalle": "Hermoso Proyecto",
+      "link": "https://www.youtube.com/watch?v=kfjXp4KTTY8"
+    },
+    {
+      "titulo": "Proyecto 3",
+      "subtitulo": "Tercer proyecto",
+      "detalle": "El tercero es el vencido",
+      "link": "https://www.youtube.com/watch?v=6eAGKDUpPfQ"
+    }
+  ]
+}
