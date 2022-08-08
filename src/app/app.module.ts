@@ -11,7 +11,8 @@ import { HardSkillsComponent } from './componentes/hard-skills/hard-skills.compo
 import { SoftSkillsComponent } from './componentes/soft-skills/soft-skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -23,8 +24,8 @@ import { HttpClientModule} from '@angular/common/http'
     HardSkillsComponent,
     SoftSkillsComponent,
     ProyectosComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
