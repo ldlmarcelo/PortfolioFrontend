@@ -1,13 +1,13 @@
 export class persona{
 id?: number;
-nombre: String;
-apellido: String;
-profesion: String;
-direccion: String;
-acerca_de: String;
-foto: String;
+nombre: string;
+apellido: string;
+profesion: string;
+direccion: string;
+acerca_de: string;
+foto: string;
 
-constructor(nombre:String,apellido:String,profesion:String,direccion:String,acerca_de:String,foto:String){
+constructor(nombre:string,apellido:string,profesion:string,direccion:string,acerca_de:string,foto:string){
   this.nombre = nombre;
   this.apellido = apellido;
   this.profesion = profesion;
