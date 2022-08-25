@@ -1,20 +1,19 @@
-import { PortfolioService } from './../../servicios/portfolio.service';
+import { ExperiencialaboralService } from 'src/app/service/experiencialaboral.service';
 import { Component, OnInit } from '@angular/core';
+import { experienciaLaboral } from './../../model/experienciaLaboral';
 
 @Component({
-  selector: 'app-experiencia-laboral',
+  selector: 'app-experiencialaboral',
   templateUrl: './experiencialaboral.component.html',
   styleUrls: ['./experiencialaboral.component.css']
 })
-export class ExperienciaLaboralComponent implements OnInit {
-
+export class ExperiencialaboralComponent implements OnInit {
   experienciaLaboralList: any;
-  constructor(private MiPortfolioData: PortfolioService) { }
+  experiencialaboral: experienciaLaboral = new experienciaLaboral("","","","","");
 
-  ngOnInit(): void {
-    this.MiPortfolioData.obtenerDatos().subscribe(data =>{
-      this.experienciaLaboralList=data.experienciaLaboral;
-    })
+  constructor(public experiencialaboralservice: ExperiencialaboralService) { }
+
+  ngOnInit() {
   }
 
 }
