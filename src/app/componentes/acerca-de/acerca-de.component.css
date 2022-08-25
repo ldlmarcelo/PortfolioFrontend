@@ -5,14 +5,14 @@
 #mifoto {
     flex: auto;
     position: relative;
-    height: 20vh;
-    width: 20vh;
+    height: 25vh;
+    width: 25vh;
     border-radius: 100%;
     margin-left: 30px;
     margin-top: -30%;
     padding: .25rem;
     background-color: #fff;
-    
+
 }
 
 #pAcercaDe {

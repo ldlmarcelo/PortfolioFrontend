@@ -4,7 +4,7 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navbar-header">
             <a class="navbar-brand" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"
                 target="_blank">
-                <img id="APLogo" [src]="miPortfolio.APLogo" alt="Logo Argentina Programa">
+                <img id="APLogo" src="https://i.ibb.co/2YNvWrg/APLogo-20-20.png" alt="Logo Argentina Programa">
                 <a href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa" target="_blank">
                     #YoProgramo
                 </a>
@@ -22,27 +22,30 @@
                     <!--ml-auto desplaza a la izquierda los elementos-->
                     <li class="nav-item active">
                         <a class="nav-link" target="_blank"
-                            href="https://ar.linkedin.com/in/marcelo-javier-luna-dalla-lasta-7a57b71a6?trk=people-guest_people_search-card">
-                            <img id="logolinkedin" [src]="miPortfolio.logoLinkedin" alt="Linkedin">
+                            href={{header.linkedin}}>
+                            <img id="logolinkedin" src="https://i.ibb.co/CWc67bB/Logolinkedin.png" alt="Linkedin">
                         </a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" id="logogithub" target="_blank" href="https://github.com/ldlmarcelo">
-                            <img id="logogithub" [src]="miPortfolio.logoGithub" alt="Github">
+                        <a class="nav-link" id="logogithub" target="_blank" href={{header.github}}>
+                            <img id="logogithub" src="https://i.ibb.co/y5QWg1t/github.png" alt="Github">
+
                         </a>
                     </li>
 
 
                 </ul>
-                <a type="button" class="btn btn-info" id="login" href="/login">Login</a>
+
+                <button type="button" class="btn btn-info" (click)="login()" *ngIf="!isLogged">Login</button>
+                <button type="button" class="btn btn-info" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
             </div>
         </nav>
 
 
 
         <div class="card" style="width: 100%;">
-            <img [src]="miPortfolio.imgBackground" class="card-img-top" alt="...">
+            <img src="https://i.ibb.co/bLZsfwV/developer.jpg" class="card-img-top" alt="...">
 
         </div>
 
