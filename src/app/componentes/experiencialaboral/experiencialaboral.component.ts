@@ -1,6 +1,6 @@
 import { ExperiencialaboralService } from 'src/app/service/experiencialaboral.service';
 import { Component, OnInit } from '@angular/core';
-import { experienciaLaboral } from './../../model/experienciaLaboral';
+
 
 @Component({
   selector: 'app-experiencialaboral',
@@ -8,12 +8,19 @@ import { experienciaLaboral } from './../../model/experienciaLaboral';
   styleUrls: ['./experiencialaboral.component.css']
 })
 export class ExperiencialaboralComponent implements OnInit {
-  experienciaLaboralList: any;
-  experiencialaboral: experienciaLaboral = new experienciaLaboral("","","","","");
 
-  constructor(public experiencialaboralservice: ExperiencialaboralService) { }
+  expLaboralList:any;
+
+  constructor(private datosExpLaboral: ExperiencialaboralService) { }
 
   ngOnInit() {
+    this.datosExpLaboral.getExperiencialaboral().subscribe(data =>{
+      this.expLaboralList=data;
+    })
   }
 
 }
+
+
+
+

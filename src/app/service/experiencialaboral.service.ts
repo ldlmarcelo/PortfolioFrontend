@@ -8,10 +8,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ExperiencialaboralService{
-  URL = 'http://localhost:8080/experiencialaboral/';
+  URL = 'http://localhost:8080';
   constructor(private http: HttpClient) {}
 
   public getExperiencialaboral(): Observable<experienciaLaboral> {
-    return this.http.get<experienciaLaboral>(this.URL+'traer/experiencialaboral');
+    return this.http.get<experienciaLaboral>(this.URL+'/ExperienciaLaboral/traer');
   }
 }

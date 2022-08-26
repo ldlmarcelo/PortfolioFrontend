@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class AuthService {
-  uri = 'http://localhost:3000/api'; //La Url que corresponda en cada caso
+  uri = 'http://localhost:8080'; //La Url que corresponda en cada caso
   token: any;
 
   constructor(private http: HttpClient, private rotuer: Router) {}
