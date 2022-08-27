@@ -9,14 +9,16 @@
           <h5>Experiencia Laboral</h5>
 
           <li *ngFor="let experiencia of expLaboralList" class="list-group-item">
-            <img src={{experiencia.logo}} style= "width:50px" alt="">
-            <p>{{experiencia.fecha}} {{experiencia.empresa}} {{experiencia.puesto}} {{experiencia.descripcion}}</p>
+            <p><img src={{experiencia.logo}} style= "width:50px" alt=""></p>
+            {{experiencia.empresa}} - {{experiencia.puesto}}
+            <p>{{experiencia.fecha}}</p>
+            {{experiencia.descripcion}}
           </li>
 
           <li class="list-group-item">
             <a
               target="_blank"
-              href=""
+              href="#"
               class="card-link"
               >...más detalles
             </a>
