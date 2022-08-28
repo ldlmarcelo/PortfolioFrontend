@@ -1,5 +1,7 @@
-import { ExperiencialaboralService } from 'src/app/service/experiencialaboral.service';
-import { Component, OnInit } from '@angular/core';
+import { header } from './../../model/header.model';
+import { ExperienciaLaboralService } from 'src/app/service/experiencialaboral.service';
+import { Component, OnInit, Injectable, Input } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 
 @Component({
@@ -11,7 +13,7 @@ export class ExperiencialaboralComponent implements OnInit {
 
   expLaboralList:any;
 
-  constructor(private datosExpLaboral: ExperiencialaboralService) { }
+  constructor(private datosExpLaboral: ExperienciaLaboralService) { }
 
   ngOnInit() {
     this.datosExpLaboral.getExperiencialaboral().subscribe(data =>{
