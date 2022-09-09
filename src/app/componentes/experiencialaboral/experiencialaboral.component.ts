@@ -1,7 +1,8 @@
-import { header } from './../../model/header.model';
+import { ExperienciaLaboral } from 'src/app/model/experienciaLaboral';
 import { ExperienciaLaboralService } from 'src/app/service/experiencialaboral.service';
 import { Component, OnInit, Injectable, Input } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
+import { TokenService } from 'src/app/service/token.service';
 
 
 @Component({
@@ -10,18 +11,37 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./experiencialaboral.component.css']
 })
 export class ExperiencialaboralComponent implements OnInit {
+  isLogged=false
+  expLaboralList:ExperienciaLaboral[]=[];
+  public modificarEducacion:ExperienciaLaboral|undefined;
+  public eliminarExperiencia:ExperienciaLaboral|undefined;
 
-  expLaboralList:any;
+  constructor(private experienciaService: ExperienciaLaboralService, private router:Router,
+    private tokenService: TokenService) { }
 
-  constructor(private datosExpLaboral: ExperienciaLaboralService) { }
-
-  ngOnInit() {
-    this.datosExpLaboral.getExperiencialaboral().subscribe(data =>{
-      this.expLaboralList=data;
-    })
+  ngOnInit():void {
+    this.mostrarExperiencia();
+    if(this.tokenService.getToken()){
+      this.isLogged=true;
+    }else{
+      this.isLogged=false;
+    }
   }
 
-}
+  public mostrarExperiencia():void{
+    this.experienciaService.getExperiencialaboral().subscribe(data=>{this.expLaboralList=data;})
+  }
+
+    login(){
+      this.router.navigate(['/login'])
+    }
+    onLogOut():void{
+      this.tokenService.logOut();
+      window.location.reload();
+    }
+  }
+
+
 
 
 
