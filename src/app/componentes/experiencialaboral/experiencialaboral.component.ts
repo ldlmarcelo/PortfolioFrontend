@@ -3,6 +3,7 @@ import { ExperienciaLaboralService } from 'src/app/service/experiencialaboral.se
 import { Component, OnInit, Injectable, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { TokenService } from 'src/app/service/token.service';
+import { HttpErrorResponse } from '@angular/common/http';
 
 
 @Component({
@@ -30,6 +31,20 @@ export class ExperiencialaboralComponent implements OnInit {
 
   public mostrarExperiencia():void{
     this.experienciaService.getExperiencialaboral().subscribe(data=>{this.expLaboralList=data;})
+  }
+
+  public onEliminarExperiencia(idExp:number):void{
+    this.experienciaService.eliminarExperiencia(idExp).subscribe({
+      next:(response:void)=>{
+        alert("Se elimino correctamente la experiencia");
+        this.router.navigate(['']);
+
+      },
+      error:(error:HttpErrorResponse)=>{
+      alert('No se pudo eliminar la experiencia');
+      this.router.navigate(['']);
+      }
+    })
   }
 
     login(){
