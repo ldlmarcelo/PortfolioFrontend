@@ -34,7 +34,7 @@ export class ExperiencialaboralComponent implements OnInit {
   }
 
   public onEliminarExperiencia(idExp:number):void{
-    this.experienciaService.eliminarExperiencia(idExp).subscribe({
+    this.experienciaService.delete(idExp).subscribe({
       next:(response:void)=>{
         alert("Se elimino correctamente la experiencia");
         this.router.navigate(['']);

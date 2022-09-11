@@ -15,6 +15,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { NewExperienciaComponent } from './componentes/experiencialaboral/new-experiencia.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HomeComponent,
     LoginComponent,
+    NewExperienciaComponent,
     ],
   imports: [
     BrowserModule,

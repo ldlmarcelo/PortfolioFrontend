@@ -8,7 +8,7 @@ import { header } from '../model/header.model';
   providedIn: 'root',
 })
 export class HeaderService {
-  URL = 'http://localhost:8080/header/';
+  URL = 'http://localhost:8080/persona/';
   constructor(private http: HttpClient) {}
 
   public getHeader(): Observable<header> {

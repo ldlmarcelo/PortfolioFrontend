@@ -7,22 +7,43 @@
         <ul class="list-group list-group-item">
           <h5>Experiencia Laboral</h5>
 
+          <div>
+            <button
+              type="button"
+              class="btn btn-success"
+              routerLink="/nuevaexp"
+              *ngIf="isLogged"
+            >
+              Agregar experiencia
+            </button>
+          </div>
+
+
           <li
             *ngFor="let experiencia of expLaboralList"
             class="list-group-item"
           >
-            <p>
-              <img src="{{ experiencia.logo }}" style="width: 50px" alt="" />
-            </p>
-            {{ experiencia.empresa }} - {{ experiencia.puesto }}
-            <p>{{ experiencia.fecha }}</p>
-            {{ experiencia.descripcion }}
+            <ul>
+              <img src="{{ experiencia.logo }}" style="width: 100px" alt="logo" />
+              Editar Borrar
+
+              <li>
+                <label><mark>Empresa: </mark></label>{{ experiencia.empresa }}
+              </li>
+              <li>
+                <label><mark>Puesto: </mark></label>{{ experiencia.puesto }}
+              </li>
+              <li>
+                <label><mark>Período: </mark></label>{{ experiencia.fecha }}
+              </li>
+              <li>
+                <label><mark>Descripción: </mark></label>{{ experiencia.descripcion }}
+              </li>
+            </ul>
           </li>
 
           <li class="list-group-item">
-            <a target="_blank" href="#" class="card-link"
-              >...más detalles
-            </a>
+            <a target="_blank" href="#" class="card-link">...más detalles </a>
           </li>
         </ul>
       </div>
