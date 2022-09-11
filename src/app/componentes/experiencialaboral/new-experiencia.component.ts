@@ -1,7 +1,8 @@
-import { ExperienciaLaboralService } from 'src/app/service/experiencialaboral.service';
-import { ExperienciaLaboral } from 'src/app/model/experienciaLaboral';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ExperienciaLaboralService } from 'src/app/service/experiencialaboral.service';
+import { ExperienciaLaboral } from 'src/app/model/experienciaLaboral';
+
 
 @Component({
   selector: 'app-new-experiencia',
@@ -24,24 +25,25 @@ export class NewExperienciaComponent implements OnInit {
   }
 
   onCreate(): void {
-    const expe = new ExperienciaLaboral(
+    const experiencia = new ExperienciaLaboral(
       this.logoExperiencia,
       this.empExperiencia,
       this.puestoExperiencia,
       this.fechExperiencia,
-      this.descExperiencia);
+      this.descExperiencia)
 
 
 
-      this.experienciaServicio.save(expe).subscribe(
+      this.experienciaServicio.save(experiencia).subscribe(
       data => {
         alert("se agregó la nueva Experiencia Laboral");
         this.router.navigate(['']);
       }, err => {
+        console.log(err);
         alert("Algo salió mal :(");
         this.router.navigate(['']);
       }
-    );
+    )
   }
 
 }
