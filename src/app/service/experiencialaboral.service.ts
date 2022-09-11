@@ -1,3 +1,5 @@
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from './persona.service';
 import { ExperienciaLaboral } from './../model/experienciaLaboral';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
@@ -7,6 +9,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
+
 export class ExperienciaLaboralService{
   URL = 'http://localhost:8080/ExperienciaLaboral/';
   constructor(private http: HttpClient) {}
@@ -26,4 +29,6 @@ export class ExperienciaLaboralService{
   public delete(id: number): Observable<any>{
     return this.http.delete<any>(this.URL + `borrar/${id}`);
   }
+
+
 }
