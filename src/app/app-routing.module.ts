@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   {path: '', component: HomeComponent},
   {path:'nuevaexp',component: NewExperienciaComponent},
-  {path: 'editexp',component: EditExpComponent}
+  {path: 'editexp/:id',component: EditExpComponent}
 
 ];
 

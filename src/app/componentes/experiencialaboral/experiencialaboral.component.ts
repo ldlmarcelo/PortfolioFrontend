@@ -30,6 +30,7 @@ export class ExperiencialaboralComponent implements OnInit {
     }else{
       this.isLogged=false;
     }
+
   }
 
   public mostrarExperiencia():void{
