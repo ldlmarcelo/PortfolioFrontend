@@ -49,6 +49,7 @@
                 type="button"
                 class="btn btn-warning"
                 routerLink="/editexp/{{ experiencia.id }}"
+                *ngIf="isLogged"
               >
                 <i class="bi bi-pencil-fill"></i> Editar
               </button>
@@ -58,6 +59,7 @@
               class="btn btn-danger"
               (click)="onEliminarExperiencia(experiencia.id)"
               style="margin-left: 5px;"
+              *ngIf="isLogged"
             >
             <i class="bi bi-lightning-charge-fill"></i> Eliminar
             </button>
