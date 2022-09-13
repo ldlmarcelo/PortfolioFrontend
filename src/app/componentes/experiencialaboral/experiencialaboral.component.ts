@@ -17,7 +17,7 @@ export class ExperiencialaboralComponent implements OnInit {
   expLaboralList:ExperienciaLaboral[]=[];
   header: header = new header("","");
 
-  public modificarEducacion:ExperienciaLaboral|undefined;
+  public modificarExperiencia:ExperienciaLaboral|undefined;
   public eliminarExperiencia:ExperienciaLaboral|undefined;
 
   constructor(private experienciaService: ExperienciaLaboralService, private router:Router,
@@ -37,16 +37,18 @@ export class ExperiencialaboralComponent implements OnInit {
     this.experienciaService.getExperiencialaboral().subscribe(data=>{this.expLaboralList=data;})
   }
 
-  public onEliminarExperiencia(idExp:number):void{
-    this.experienciaService.delete(idExp).subscribe({
+  public onEliminarExperiencia(id:number):void{
+    this.experienciaService.delete(id).subscribe({
       next:(response:void)=>{
+        console.log("bien");
         alert("Se elimino correctamente la experiencia");
-        this.router.navigate(['']);
+        this.mostrarExperiencia();
 
       },
       error:(error:HttpErrorResponse)=>{
+        console.log(error);
       alert('No se pudo eliminar la experiencia');
-      this.router.navigate(['']);
+      this.mostrarExperiencia();
       }
     })
   }
