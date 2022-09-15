@@ -38,16 +38,16 @@ export class EducacionComponent implements OnInit {
     this.educacionService.getEducacion().subscribe(data=>{this.eduList=data;})
   }
 
-  public onEliminarExperiencia(idExp:number):void{
+  public onEliminarEducacion(idExp:number):void{
     this.educacionService.delete(idExp).subscribe({
       next:(response:void)=>{
         alert("Se elimino correctamente la educacion");
-        this.router.navigate(['']);
+        this.mostrarEducacion();
 
       },
       error:(error:HttpErrorResponse)=>{
       alert('No se pudo eliminar la educacion');
-      this.router.navigate(['']);
+      this.mostrarEducacion();
       }
     })
   }

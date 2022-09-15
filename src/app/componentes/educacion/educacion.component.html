@@ -5,8 +5,50 @@
         <ul class="list-group list-group-item">
           <h5>Educación</h5>
           <ul class="list-group-item">
+            <div>
+              <button
+                type="button"
+                class="btn btn-success"
+                routerLink="/nuevaedu"
+                *ngIf="isLogged"
+              >
+                Agregar educación
+              </button>
+            </div>
+
             <li *ngFor="let educacion of eduList" class="list-group-item">
-                {{educacion.fecha}} {{educacion.institucion}}{{educacion.titulo}}
+              <ul>
+                <li>
+                  <label for="fecha">Fecha: </label> {{ educacion.fecha }}
+                </li>
+                <li>
+                  <label for="fecha">Insitutción: </label>
+                  {{ educacion.institucion }}
+                </li>
+                <li>
+                  <label for="fecha">Título: </label> {{ educacion.titulo }}
+                </li>
+              </ul>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  routerLink="/editedu/{{ educacion.id }}"
+                  *ngIf="isLogged"
+                >
+                  <i class="bi bi-pencil-fill"></i> Editar
+                </button>
+
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  (click)="onEliminarEducacion(educacion.id)"
+                  style="margin-left: 5px"
+                  *ngIf="isLogged"
+                >
+                  <i class="bi bi-lightning-charge-fill"></i> Eliminar
+                </button>
+              </td>
             </li>
           </ul>
         </ul>

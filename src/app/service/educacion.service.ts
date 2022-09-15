@@ -31,7 +31,7 @@ export class EducacionService {
     return this.http.delete<Educacion>(this.URL + `borrar/${id}`);
   }
 
-  public buscarExperiencia(id: number):Observable<Educacion>{
+  public buscarEducacion(id: number):Observable<Educacion>{
     return this.http.get<Educacion>(this.URL + `buscar/${id}`);
   }
 }

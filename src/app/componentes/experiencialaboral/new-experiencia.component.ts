@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { ExperienciaLaboralService } from 'src/app/service/experiencialaboral.service';
 import { ExperienciaLaboral } from 'src/app/model/experienciaLaboral';
 
-
 @Component({
   selector: 'app-new-experiencia',
   templateUrl: './new-experiencia.component.html',
@@ -31,8 +30,6 @@ export class NewExperienciaComponent implements OnInit {
       this.puestoExperiencia,
       this.fechExperiencia,
       this.descExperiencia)
-
-
 
       this.experienciaServicio.save(experiencia).subscribe(
       data => {
