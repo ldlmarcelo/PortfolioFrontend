@@ -21,6 +21,7 @@ import { NewEducacionComponent } from './componentes/educacion/new-educacion.com
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { EditEducacionComponent } from './componentes/educacion/edit-educacion.c
     EditExpComponent,
     NewEducacionComponent,
     EditEducacionComponent,
+
     ],
   imports: [
     BrowserModule,
