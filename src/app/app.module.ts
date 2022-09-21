@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -19,6 +20,10 @@ import { NewExperienciaComponent } from './componentes/experiencialaboral/new-ex
 import { EditExpComponent } from './componentes/experiencialaboral/edit-exp.component';
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
+import { NewSoftskillComponent } from './componentes/soft-skills/new-softskill.component';
+import { EditSoftskillComponent} from './componentes/soft-skills/edit-softskill.component';
+
+
 
 
 
@@ -39,6 +44,9 @@ import { EditEducacionComponent } from './componentes/educacion/edit-educacion.c
     EditExpComponent,
     NewEducacionComponent,
     EditEducacionComponent,
+    NewSoftskillComponent,
+    EditSoftskillComponent,
+
 
     ],
   imports: [

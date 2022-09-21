@@ -1,0 +1,49 @@
+<div class="container" *ngIf="softs">
+  <div class="row">
+    <div>
+      <form (ngSubmit)="Editsofts()" novalidate #f="ngForm">
+
+        <div class="form-group">
+          <label for="softs.habilidad">Habilidad: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="habilidadSoftskill"
+            name="habilidadSoftskill"
+            [(ngModel)]="softs.habilidad"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="softs.porcentaje">Porcentaje: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="softs.porcentaje"
+            name="soft.porcentaje"
+            [(ngModel)]="softs.porcentaje"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="softs.tooltip">Tooltip: </label>
+          <input
+            type="text"
+            class="softs.tooltip"
+            id="softs.tooltip"
+            name="softs.tooltip"
+            [(ngModel)]="softs.tooltip"
+            required
+          />
+        </div>
+
+
+
+
+        <button class="btn btn-success">Editar</button>
+      </form>
+    </div>
+  </div>
+</div>
