@@ -1,3 +1,5 @@
+import { NewHardskillComponent } from './componentes/hard-skills/new-hardskill.component';
+import { EditHardskillComponent } from './componentes/hard-skills/edit-hardskill.component';
 import { EditSoftskillComponent } from './componentes/soft-skills/edit-softskill.component';
 import { NewSoftskillComponent } from './componentes/soft-skills/new-softskill.component';
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
@@ -19,7 +21,9 @@ const routes: Routes = [
   { path: 'nuevaedu', component: NewEducacionComponent },
   { path: 'editedu/:id', component: EditEducacionComponent },
   { path: 'nuevSoftskill', component: NewSoftskillComponent },
-  { path: 'editsoftskill/:id', component: EditSoftskillComponent}
+  { path: 'editsoftskill/:id', component: EditSoftskillComponent},
+  { path: 'nuevHardskill', component: NewHardskillComponent},
+  { path: 'edithardskill/:id', component: EditHardskillComponent}
 
 
 

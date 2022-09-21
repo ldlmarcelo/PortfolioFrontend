@@ -22,6 +22,8 @@ import { NewEducacionComponent } from './componentes/educacion/new-educacion.com
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 import { NewSoftskillComponent } from './componentes/soft-skills/new-softskill.component';
 import { EditSoftskillComponent} from './componentes/soft-skills/edit-softskill.component';
+import { NewHardskillComponent } from './componentes/hard-skills/new-hardskill.component';
+import { EditHardskillComponent } from './componentes/hard-skills/edit-hardskill.component';
 
 
 
@@ -46,6 +48,9 @@ import { EditSoftskillComponent} from './componentes/soft-skills/edit-softskill.
     EditEducacionComponent,
     NewSoftskillComponent,
     EditSoftskillComponent,
+    HardSkillsComponent,
+    NewHardskillComponent,
+    EditHardskillComponent,
 
 
     ],

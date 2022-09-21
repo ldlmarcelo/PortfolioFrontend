@@ -1,0 +1,35 @@
+<div class="container" *ngIf="hards">
+  <div class="row">
+    <div>
+      <form (ngSubmit)="Edithards()" novalidate #f="ngForm">
+
+        <div class="form-group">
+          <label for="hards.icon">Icon: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="iconHardskill"
+            name="iconHradskill"
+            [(ngModel)]="hards.icon"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="hards.porcentaje">Porcentaje: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="hards.porcentaje"
+            name="hards.porcentaje"
+            [(ngModel)]="hards.porcentaje"
+            required
+          />
+        </div>
+
+
+        <button class="btn btn-success">Editar</button>
+      </form>
+    </div>
+  </div>
+</div>
