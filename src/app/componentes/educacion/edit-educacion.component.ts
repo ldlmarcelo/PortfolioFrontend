@@ -11,7 +11,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class EditEducacionComponent implements OnInit {
 educacion: Educacion=null;
-public modificarExperiencia: Educacion | undefined;
+
 
 
   constructor(private educacionServicio: EducacionService, private activatedRouter: ActivatedRoute,

@@ -10,14 +10,27 @@
 
                     <h5 class="card-title">Acerca de</h5>
                     <h6>{{persona.nombre}}</h6>
+                    <h6>{{persona.apellido}}</h6>
                     <h6>{{persona.profesion}}</h6>
                     <h6>{{persona.direccion}}</h6>
                 </div>
+                <button
+                type="button"
+                class="btn btn-warning"
+                routerLink="/editperso/{{ persona.id }}"
+                style="margin-left: 10px; margin-bottom: 10px;"
+                *ngIf="isLogged"
+              >
+                <i class="bi bi-pencil-fill"></i> Editar
+              </button>
             </div>
             <div class="col">
                 <div class="card-body">
 
-                    <h4 class="card-title">Hola, soy {{persona.nombre}} y este es mi Portfolio Web</h4>
+                    <h4 class="card-title">Hola, soy {{persona.nombre}} {{persona.apellido}} y este es mi Portfolio Web
+
+
+                    </h4>
 
                     <p class="card-text">{{persona.acerca_de}} </p>
                 </div>

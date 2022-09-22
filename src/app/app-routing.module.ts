@@ -1,3 +1,4 @@
+import { EditarPersonaComponent } from './componentes/acerca-de/editar-persona.component';
 import { NewHardskillComponent } from './componentes/hard-skills/new-hardskill.component';
 import { EditHardskillComponent } from './componentes/hard-skills/edit-hardskill.component';
 import { EditSoftskillComponent } from './componentes/soft-skills/edit-softskill.component';
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'nuevSoftskill', component: NewSoftskillComponent },
   { path: 'editsoftskill/:id', component: EditSoftskillComponent},
   { path: 'nuevHardskill', component: NewHardskillComponent},
-  { path: 'edithardskill/:id', component: EditHardskillComponent}
+  { path: 'edithardskill/:id', component: EditHardskillComponent},
+  { path: 'editperso/:id', component: EditarPersonaComponent},
 
 
 

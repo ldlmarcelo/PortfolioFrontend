@@ -6,6 +6,8 @@ export class persona {
   direccion: string;
   acerca_de: string;
   foto: string;
+  linkedin: string;
+  github: string;
 
   constructor(
     nombre: string,
@@ -13,7 +15,10 @@ export class persona {
     profesion: string,
     direccion: string,
     acerca_de: string,
-    foto: string
+    foto: string,
+    linkedin: string,
+    github: string
+
   ) {
     this.nombre = nombre;
     this.apellido = apellido;
@@ -21,5 +26,7 @@ export class persona {
     this.direccion = direccion;
     this.acerca_de = acerca_de;
     this.foto = foto;
+    this.linkedin= linkedin;
+    this.github= github;
   }
 }

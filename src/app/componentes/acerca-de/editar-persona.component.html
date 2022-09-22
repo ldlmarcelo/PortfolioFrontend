@@ -1,0 +1,105 @@
+<div class="container" *ngIf="pers">
+  <div class="row">
+    <div>
+      <form (ngSubmit)="EditPers()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombrePersona">Nombre: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombrePersona"
+            name="nombrePersona"
+            [(ngModel)]="pers.nombre"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="apellidoPersona">Apellido: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="apellidoPersona"
+            name="apellidoPersona"
+            [(ngModel)]="pers.apellido"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="profesionPersona">Profesion: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="profesionPersona"
+            name="profesionPersona"
+            [(ngModel)]="pers.profesion"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="acerca_dePersona">Acerca de: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="acerca_dePersona"
+            name="acerca_dePersona"
+            [(ngModel)]="pers.acerca_de"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="direccionPersona">Dirección: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="direccionPersona"
+            name="direccionPersona"
+            [(ngModel)]="pers.direccion"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="fotoPersona">Foto: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="fotoPersona"
+            name="fotoPersona"
+            [(ngModel)]="pers.foto"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="linkedinPersona">Linkedin: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="linkedinPersona"
+            name="linkedinPersona"
+            [(ngModel)]="pers.linkedin"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="githubPersona">Github: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="githubPersona"
+            name="githubPersona"
+            [(ngModel)]="pers.github"
+            required
+          />
+        </div>
+
+        <button class="btn btn-success">Editar</button>
+      </form>
+    </div>
+  </div>
+</div>
