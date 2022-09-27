@@ -23,7 +23,7 @@ export class ProyectoService {
 
 
 
-  public update(softskill: proyecto): Observable<proyecto> {
+  public update(proyecto: proyecto): Observable<proyecto> {
 
     return this.http.put<proyecto>(this.URL + `modificar`, proyecto);
   }
@@ -33,7 +33,7 @@ export class ProyectoService {
     return this.http.delete<proyecto>(this.URL + `borrar/${id}`);
   }
 
-  public buscarSoftskill(id: number):Observable<proyecto>{
+  public buscarProyecto(id: number):Observable<proyecto>{
     return this.http.get<proyecto>(this.URL + `buscar/${id}`);
   }
 }

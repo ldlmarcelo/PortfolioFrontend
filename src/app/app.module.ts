@@ -25,7 +25,8 @@ import { EditSoftskillComponent} from './componentes/soft-skills/edit-softskill.
 import { NewHardskillComponent } from './componentes/hard-skills/new-hardskill.component';
 import { EditHardskillComponent } from './componentes/hard-skills/edit-hardskill.component';
 import { EditarPersonaComponent } from './componentes/acerca-de/editar-persona.component';
-
+import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
+import { NewProyectoComponent } from './componentes/proyectos/new-proyecto.component';
 
 
 
@@ -53,6 +54,8 @@ import { EditarPersonaComponent } from './componentes/acerca-de/editar-persona.c
     NewHardskillComponent,
     EditHardskillComponent,
     EditarPersonaComponent,
+    NewProyectoComponent,
+    EditProyectoComponent,
 
 
     ],

@@ -1,20 +1,53 @@
 <div class="container proyectos">
   <div class="row">
-    <div class="col-md">
+    <div class="col-12">
       <h5>Proyectos</h5>
+      <div>
+        <button
+          type="button"
+          class="btn btn-success"
+          routerLink="/nuevoproyecto/"
+          *ngIf="isLogged"
+          style="margin-bottom: 10px;"
+        >
+          Agregar Proyecto
+        </button>
+      </div>
     </div>
 
     <div class="row">
       <div class="col" *ngFor="let proyecto of proyectoList">
-
         <div class="card card-proyectos" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">{{ proyecto.titulo }}</h5>
             <h6 class="card-subtitle mb-2 text-muted"></h6>
             <p class="card-text">{{ proyecto.subtitulo }}</p>
-            <a [href]=" proyecto.link  " target="_blank" class="card-link">{{ proyecto.detalle }}</a>
+            <a [href]="proyecto.link" target="_blank" class="card-link">{{
+              proyecto.detalle
+            }}</a>
           </div>
+
+
         </div>
+
+        <button
+        type="button"
+        class="btn btn-warning"
+        routerLink="/editarproyecto/{{ proyecto.id }}"
+        *ngIf="isLogged"
+      >
+        <i class="bi bi-pencil-fill"></i>
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-danger"
+        (click)="onEliminarProyecto(proyecto.id)"
+        style="margin-left: 5px"
+        *ngIf="isLogged"
+      >
+        <i class="bi bi-lightning-charge-fill"></i>
+      </button>
       </div>
     </div>
   </div>
