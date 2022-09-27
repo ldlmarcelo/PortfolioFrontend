@@ -1,7 +1,6 @@
 import { header } from './../../model/header.model';
 import { TokenService } from 'src/app/service/token.service';
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
 import { Router } from '@angular/router';
 import { HeaderService } from 'src/app/service/header.service';
 

@@ -18,27 +18,29 @@
     </div>
     <div class="col">
       <h5>Links</h5>
-      <ul class="list-unstyled">
-        <li class="mb-2"><a href="#">Home</a></li>
-        <li class="mb-2"><a href="#">Más sobre mí</a></li>
-        <li class="mb-2"><a href="#">Intereses</a></li>
-        <li class="mb-2"><a href="#">Blog</a></li>
+      <ul class="list-unstyled small">
+        <li class="mb-2" ><a class="nav-link active" href="#">Home</a></li>
+        <li class="mb-2"><a class="nav-link active" href="#">Más sobre mí</a></li>
+        <li class="mb-2"><a class="nav-link active" href="#">Intereses</a></li>
+        <li class="mb-2"><a class="nav-link active" href="#">Blog</a></li>
       </ul>
     </div>
+
     <div class="col">
-      <h5>Guides</h5>
-      <ul class="list-unstyled">
-        <li class="mb-2"><a href="#">Experciencia</a></li>
-        <li class="mb-2"><a href="#">Educación</a></li>
-        <li class="mb-2"><a href="#">Soft Skills</a></li>
-        <li class="mb-2"><a href="#">Hard Skills</a></li>
+      <h5>Guías</h5>
+      <ul class="list-unstyled small">
+        <li><a class="nav-link active" href="#expLab">Experiencia Laboral</a></li>
+        <li><a class="nav-link active" href="#educacion">Educación</a></li>
+        <li><a class="nav-link active" href="#softskill">Soft Skill</a></li>
+        <li><a class="nav-link active" href="#hardskill">Hard Skill</a></li>
       </ul>
     </div>
+
     <div class="col">
-      <h5>Projects</h5>
-      <ul class="list-unstyled" *ngFor="let proyecto of proyectosList">
+      <h5>Proyectos</h5>
+      <ul class="list-unstyled small" *ngFor="let proyecto of proyectosList">
         <li class="mb-2">
-          <a href="#">{{ proyecto.titulo }}</a>
+          <a class="nav-link active" href="#">{{ proyecto.titulo }}</a>
         </li>
       </ul>
     </div>

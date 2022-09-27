@@ -1,5 +1,6 @@
+import { proyecto } from 'src/app/model/proyecto';
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from './../../servicios/portfolio.service';
+import { ProyectoService } from 'src/app/service/proyecto.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,11 +9,11 @@ import { PortfolioService } from './../../servicios/portfolio.service';
 })
 export class FooterComponent implements OnInit {
   proyectosList: any;
-  constructor(private Miportfolio: PortfolioService) {}
+  constructor(private proyectoService: ProyectoService) {}
 
   ngOnInit(): void {
-    this.Miportfolio.obtenerDatos().subscribe((data) => {
-      this.proyectosList = data.proyectosList;
+    this.proyectoService.getProyecto().subscribe((data) => {
+      this.proyectosList = data;
     });
   }
 }
